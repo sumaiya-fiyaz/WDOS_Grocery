@@ -1,0 +1,40 @@
+#homeimages {
+  margin-left: 45%;
+}
+#rh {
+  text-align: center;
+}
+#submit1,
+#reset1 {
+  margin-left: 50%;
+  width: 200px;
+}
+body {
+  background-color: rgb(253, 187, 187);
+}
+table {
+  border: 2px;
+  height: 25%;
+  width: 100%;
+  border-style: solid;
+  border-spacing: 0;
+  caption-side: bottom;
+}
+th,
+tr,
+td {
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 768px) {
+  #homeimages {
+    width: 80%; /* Adjust width for smaller screens */
+  }
+
+  fieldset {
+    width: 90%; /* Expand form to full width on smaller screens */
+  }
+  .submit {
+    margin-right: 66%;
+  }
+}

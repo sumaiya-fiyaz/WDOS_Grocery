@@ -1,0 +1,118 @@
+#colpic {
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  margin-top: 20px;
+}
+#colpic img,
+#colpic iframe {
+  width: 280px; /* Set a fixed width for each image and iframe */
+  height: auto;
+  margin-right: 20px;
+  border: 3px solid palevioletred;
+}
+
+#kandypic {
+  display: flex;
+
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+#kandypic img,
+#kandypic iframe {
+  width: 280px; /* Set a fixed width for each image and iframe */
+  height: auto;
+  margin-right: 20px;
+  border: 3px solid palevioletred;
+}
+#gallepic {
+  display: flex;
+
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+#gallepic img,
+#gallepic iframe {
+  width: 280px; /* Set a fixed width for each image and iframe */
+  height: auto;
+  margin-right: 20px;
+  flex-wrap: wrap;
+  border: 3px solid palevioletred;
+}
+table {
+  text-align: center;
+  border-color: black;
+  background-color: rgb(234, 174, 184);
+  border-spacing: 0;
+  width: 100%;
+  height: 25%;
+  caption-side: bottom;
+  
+}
+th,
+tr,
+td {
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 600px) {
+  #copy {
+    text-align: left;
+    margin-top: 10px; /* Adjust margin for copyright text */
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+
+  main {
+    margin-top: -20px; /* Apply negative margin to reduce the gap */
+  }
+  header {
+    width: 100%; /* Full width for header on smaller screens */
+    position: relative;
+    margin-bottom: 5px; /* Add bottom margin to separate from main content */
+  }
+  #colpic,
+  #kandypic,
+  #gallepic {
+    flex-direction: column; /* Stack container content vertically on mobile */
+    align-items: center;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #colpic img,
+  #colpic iframe {
+    height: auto;
+    margin-right: 0;
+    margin-left: 0;
+    border: 3px solid palevioletred;
+  }
+
+  table {
+    height: 450px;
+    width: 100%;
+  }
+  #c1,
+  #c2,
+  #c3,
+  #k1,
+  #k2,
+  #k3,
+  #g1,
+  #g2 {
+    margin-bottom: 3px;
+  }
+  body {
+    text-align: center;
+    left: 0;
+    right: 0;
+  }
+  h1,
+  p {
+    align-items: center;
+  }
+}

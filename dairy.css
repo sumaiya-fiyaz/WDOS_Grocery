@@ -1,0 +1,38 @@
+#product {
+  display: flex;
+}
+#product1,
+#product2,
+#product3 {
+  flex: 1; /* Allow sections to grow and fill available space */
+  padding: 10px; /* Add spacing around sections */
+  justify-content: space-around;
+}
+.pages {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 600px) {
+  #colpic,
+  #kandypic,
+  #gallepic {
+    display: flex;
+    flex-direction: column; /* Stack images and iframes vertically */
+    align-items: center;
+  }
+
+  #colpic img,
+  #kandypic img,
+  #gallepic img,
+  #colpic iframe,
+  #kandypic iframe,
+  #gallepic iframe {
+    width: 90%; /* Adjust image and iframe width for smaller screens */
+    margin-bottom: 10px; /* Add spacing between images and iframes */
+  }
+  main {
+    margin-top: -20px;
+  }
+  .pages {
+    margin-bottom: 10px;
+  }
+}

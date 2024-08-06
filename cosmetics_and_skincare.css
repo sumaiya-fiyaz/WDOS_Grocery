@@ -1,0 +1,70 @@
+
+table{
+    text-align: center;
+   border-color: black;
+   background-color:  rgb(255, 167, 167);
+   border-spacing: 0;
+  
+   caption-side: bottom;
+}
+th,td,tr{
+    border: 1px solid black;;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #copy {
+        text-align: left;
+        margin-top: 10px; /* Adjust margin for copyright text */
+        font-size: 14px; /* Decrease font size for smaller screens */
+      }
+
+    
+ /* Adjust header for mobile */
+   
+    header {
+        padding: 10px;
+    }
+
+/* Stack navigation links vertically */
+    .pages nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pages nav a {
+        margin: 5px;
+    }
+    main {
+        margin-top: 250px; /* Add margin at the top of the body content */
+    }
+    #copy{
+        padding-right: 100px;
+
+        }
+    img{
+        width: 30px;
+        height: 60px;
+    }
+    .container {
+        flex-direction: column; /* Stack container content vertically on mobile */
+        align-items: center; /* Center align container content */
+      }
+      main {
+        margin-top: -20px; /* Apply negative margin to reduce the gap */
+      }
+      header {
+        width: 100%; /* Full width for header on smaller screens */
+        position: relative;
+        margin-bottom: 5px; /* Add bottom margin to separate from main content */
+      }
+      table{
+        height: 50%;
+        width: 60%;
+      }
+    footer{
+        padding: 10px;
+        width: 100%;
+    }
+}

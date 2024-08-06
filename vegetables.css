@@ -1,0 +1,59 @@
+main {
+  margin-top: 170px;
+}
+#venue {
+  display: flex;
+}
+#v1,
+#v2,
+#v3 {
+  flex: 1;
+  padding: 20px;
+}
+.containerveg {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  grid-gap: 20px;
+  justify-items: center;
+}
+
+/* Style for individual vegetable items */
+.item {
+  width: 100%; /* Set item width to 100% of the grid cell */
+  max-width: 300px; /* Limit maximum width of each item */
+}
+
+.item img {
+  width: 100%; /* Make image fill the entire width of the item */
+  border-radius: 8px; /* Add rounded corners to images */
+  max-width: 100%; /* Ensure images don"t exceed the width of their parent */
+  height: 200px; /* Set a fixed height for all images (adjust as needed) */
+}
+@media screen and (max-width: 768px) {
+  .containerveg {
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* Display one column for smaller screens */
+    grid-gap: 20px; /* Adjust grid gap for spacing */
+    justify-items: center; /* Center items horizontally */
+  }
+
+  .item {
+    width: 90%; /* Adjust item width to occupy 90% of container width */
+    max-width: none; /* Remove maximum width constraint */
+  }
+
+  .item img {
+    width: 100%; /* Make image fill entire width of item */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  #venue {
+    align-items: center;
+    flex-direction: column;
+  }
+  main {
+    margin-top: 20px;
+  }
+}

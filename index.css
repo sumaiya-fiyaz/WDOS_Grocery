@@ -1,0 +1,103 @@
+main {
+  margin-top: 180px;
+}
+
+#homeimages {
+  white-space: pre;
+}
+.intro {
+  background-image: url("./images/home 5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 12px;
+  border-style: groove;
+  font-weight: 650;
+}
+
+.dd-and-brand {
+  padding: 20px;
+  border: 1px solid black;
+  width: 250px;
+  float: left;
+}
+
+#intro-head {
+  text-align: center;
+}
+
+#service-intro {
+  text-align: start;
+  row-gap: 12px;
+}
+.dd-and-brand,
+.intro {
+  margin-right: 20px;
+}
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 10px; /* Add margin below each dd element */
+}
+.pages {
+  margin-bottom: 10px;
+}
+
+.ss {
+  display: flex;
+}
+.sub-section1,
+.sub-section2,
+.sub-section3 {
+  flex: 1; /* Allow sections to grow and fill available space */
+  padding: 20px; /* Add spacing around sections */
+}
+
+@media screen and (max-width: 600px) {
+  /* Simplify service intro and section layouts */
+  .dd-and-brand,
+  .intro .ss {
+    padding: 10px;
+  }
+
+  /* Adjust image sizes for better display on small screens */
+  .sub-section1 img,
+  .sub-section2 img,
+  .sub-section3 img {
+    width: 100%;
+    height: auto;
+  }
+  main {
+    margin-top: -2px;
+  }
+  a:link {
+    padding: 5px 10px;
+    margin-bottom: 3px;
+  }
+  #copy {
+    text-align: left;
+    margin-top: 10px; /* Adjust margin for copyright text */
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+
+  header {
+    width: 100%; /* Full width for header on smaller screens */
+    position: relative;
+  }
+  body {
+    text-align: center;
+    left: 0;
+    right: 0;
+  }
+  h1,
+  p {
+    align-items: center;
+  }
+  ul {
+    text-align: left;
+  }
+  .sec1 {
+    flex-direction: column; /* Stack navigation links vertically */
+  }
+}

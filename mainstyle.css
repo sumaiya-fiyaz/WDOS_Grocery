@@ -1,0 +1,225 @@
+#Login {
+  padding: 6px 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+}
+
+body,
+footer {
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+h1,
+h2,
+h3 {
+  font-size: xx-large;
+  font-weight: bolder;
+}
+body {
+  background-color: rgb(216, 147, 181);
+  font-size: larger;
+  margin: 0;
+  padding: 0;
+}
+
+.pages nav {
+  flex-direction: column; /* Stack navigation links vertically */
+  align-items: center; /* Center align navigation links */
+}
+
+/*.pages nav a {
+    margin: 10px; /* Adjust margin for navigation links */
+/*}
+/* visited link */
+a:visited {
+  color: rgb(239, 56, 86);
+}
+/* unvisited link */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(187, 75, 93);
+}
+
+/* selected link */
+a:active {
+  color: rgb(92, 9, 23);
+}
+
+a:link,
+a:visited {
+  background-color: pink;
+  color: black;
+  border: 2px solid rgb(230, 94, 117);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover,
+a:active {
+  background-color: rgb(247, 86, 113);
+}
+
+.pages nav a {
+  /*selects every a tag within the nav*/
+  margin-right: 30px;
+}
+
+header,
+footer {
+  background-color: rgb(231, 189, 189);
+}
+
+a {
+  color: black;
+}
+
+#copy {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+header {
+  border: 0;
+  border-bottom: 1px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+main {
+  margin-top: 115px;
+}
+.sec1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Distribute items equally with space around them */
+  align-items: center;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-grow: 1; /* Allow the container to grow and fill available space */
+  align-items: center;
+  justify-content: space-between; /* Distribute items with space between them */
+}
+
+#homeimages,
+#cart {
+  border: none;
+  background-color: rgb(231, 189, 189);
+}
+#Login:hover,
+#homeimages:hover {
+  transform: scale(1.5, 2);
+}
+.sec1 {
+  margin-top: 0;
+}
+.pages {
+  margin-top: 0%;
+  margin-bottom: 2px;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+
+  border: none;
+  border-top: 2px solid rgba(141, 91, 91, 0.319);
+}
+
+.footer-link {
+  display: flex;
+}
+
+footer h3 {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.social-media {
+  padding: 10px;
+}
+
+.link-segment {
+  flex: 1;
+  padding: 10px 20px;
+}
+
+.link-segment a {
+  flex: 1;
+  width: auto;
+
+  background-color: rgb(247, 177, 189);
+  color: black;
+  border: 2px solid rgb(230, 94, 117);
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: medium;
+  margin: 0 5px 5px 0;
+}
+.olink {
+  border: none;
+  background-color: rgb(216, 147, 181);
+}
+
+@media screen and (max-width: 425px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-link {
+    flex-direction: column;
+  }
+
+  .link-segment {
+    padding: 0;
+  }
+
+  .container {
+    flex-direction: column; /* Stack container content vertically on mobile */
+    align-items: center; /* Center align container content */
+  }
+
+  #copy {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header {
+    position: relative;
+    width: 100%; /* Full width for header on smaller screens */
+  }
+  #search,
+  #location {
+    margin-top: 10px;
+  }
+  .pages {
+    margin-bottom: 25px;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer-link {
+    flex-direction: column;
+  }
+  .link-segment {
+    padding: 0;
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "My grocery PWA",
+    "short_name": "PWA",
+    "description": "A simple example of a my grocery Progressive Web App",
+    "start_url": "/Index.html",
+    "display": "standalone",
+    "background_color": "rgb(231, 189, 189)",
+    "theme_color": "rgb(231, 189, 189)",
+    "icons": [
+      {
+        "src": "logo.jpg",
+        "sizes": "192x192",
+        "type": "./images/logo.jpg"
+      },
+      {
+        "src": "logo.jpg",
+        "sizes": "512x512",
+        "type": "./images/logo.jpg"
+      }
+    ]
+  }

@@ -1,0 +1,173 @@
+body {
+    background-color: rgb(241, 180, 180);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#orderhead {
+    text-align: center;
+}
+
+#fruits, #vegetable, #dairy, #meat,#bc{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 250px;
+    
+
+}
+#fruits img, #vegetable img, #dairy img, #meat img, #bc img {
+    width: 285px;
+    height: 250px;
+
+}
+#apple_con,#mango_con,#orange_con,#grape_con,#banana_con,#guava_con,#carrot_con,#beans_con,#beetroot_con,#brinjal_con,#ladiesFinger_con,#spinach_con,#milk_con,#cheese_con,#milkPowder_con,#yoghurt_con,#curd_con,#whippingCreame_con,
+#prawns_con,#chicken_con,#meatballs_con,#lobster_con,#salt_con,#sugar_con,#turmeric_con,#chilli_con,#baking_con,#tea_con
+
+{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid rgb(241, 35, 148) ;
+}
+
+#textboxcoupon {
+    width: 300px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#apply {
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+table{
+    border: 1px solid black;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(241, 35, 148);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:rgb(164, 134, 162);
+    color: rgb(124, 15, 73);
+}
+
+@media (max-width: 768px) {
+    /* Adjusting flex direction for easier scrolling */
+    #fruits, #vegetable, #dairy, #meat, #bc {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ensure images resize properly */
+    #fruits img, #vegetable img, #dairy img, #meat img, #bc img {
+        width: 90%;
+        height: auto;
+    }
+
+    /* Buttons take full width */
+    .pay button {
+        width: 90%;
+        margin: 5px 0;
+    }
+
+    /* Adjust header size */
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Adjust padding and margins */
+    #fruits div, #vegetable div, #dairy div, #meat div, #bc div {
+        margin-left: 0;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    /* Stack sections vertically */
+    #fruits, #vegetable, #dairy, #meat, #bc {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ensure images resize properly */
+    #fruits img, #vegetable img, #dairy img, #meat img, #bc img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Make buttons stack vertically */
+    .pay {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pay button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Adjust table to scroll if necessary */
+    #orderTable {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    th, td {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+
+    /* Adjust header font size */
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    /* Smaller text for price details */
+    span {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Increase font size */
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    #fruits img, #vegetable img, #dairy img, #meat img, #bc img {
+        width: 300px;
+        height: 260px;
+    }
+
+    #orderTable th, #orderTable td {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /* Adjust button size */
+    button {
+        padding: 15px 25px;
+        font-size: 1rem;
+    }
+}
+
