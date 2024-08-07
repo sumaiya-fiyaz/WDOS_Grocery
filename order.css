@@ -65,8 +65,9 @@ button {
 }
 
 button:hover {
-    background-color:rgb(164, 134, 162);
+    background-color:rgb(244, 164, 240);
     color: rgb(124, 15, 73);
+    border: solid 1px rgb(124, 15, 73) ;
 }
 
 @media (max-width: 768px) {
