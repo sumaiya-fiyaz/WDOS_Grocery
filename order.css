@@ -56,18 +56,17 @@ th, td {
 }
 
 button {
-    padding: 10px 20px;
-    background-color: rgb(241, 35, 148);
+    background-color: #A81D38; /* Dark red */
     color: white;
-    border: none;
+    border: soild 1px;
     border-radius: 5px;
     cursor: pointer;
+    padding: 10px 20px;
 }
 
 button:hover {
-    background-color: rgb(164, 0, 55);
+    background-color: #5E405F; /* Dark purple */
     color: white;
-    border: solid 1px white ;
 }
 
 @media (max-width: 768px) {
