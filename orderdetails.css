@@ -5,27 +5,26 @@ body{
     background-color: rgb(241, 180, 180);
 }
 button {
-    background-color: #A81D38; /* Dark red */
+    padding: 10px 20px;
+    background-color: rgb(241, 35, 148);
     color: white;
-    border: soild 1px;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-    padding: 10px 20px;
 }
-
-button:hover {
-    background-color: #5E405F; /* Dark purple */
-    color: white;
-}
-
-
 #submit{
     margin-left: 45%;
+}
+button:hover {
+    background-color:rgb(253, 251, 253);
+    color: rgb(124, 15, 73);
+    border: solid 1px rgb(124, 15, 73) ;
+}
 table{
-    border: 1px solid black !important;
+    border: 1px solid black;
 }
 th, td {
-    border: 1px solid black !important;
+    border: 1px solid black;
     padding: 8px;
     text-align: center;
 }
