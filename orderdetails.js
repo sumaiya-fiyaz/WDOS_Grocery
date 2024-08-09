@@ -78,7 +78,9 @@ document.addEventListener("DOMContentLoaded", function (Event) {
             alert("Phone number should be filled");
         } else if (nic == "") {
             alert("NIC should be filled");
-        } else if (Address == "") {
+        } else if (!selectedGender) {
+            alert("Gender should be selected");
+        }else if (Address == "") {
             alert("Address should be filled");
         } else if (!selectedPayment) {
             alert("Payment method should be selected");
@@ -86,9 +88,7 @@ document.addEventListener("DOMContentLoaded", function (Event) {
             alert("Bank should be filled");
         } else if (Accountnumber == "") {
             alert("Account number should be filled");
-        } else if (!selectedGender) {
-            alert("Gender should be selected");
-        } else if (Dis.value == "") {
+        }  else if (Dis.value == "") {
             alert("District should be selected");
         } else if (!selectedAccount) {
             alert("Account type should be selected");
